@@ -5,13 +5,17 @@ import 'bootstrap';
 
 import '../sass/style.scss';
 
+// Common
+import appServices from './common/services';
+
 // Home Page
 import homeCtrl from './home/';
 import homeTemplate from './home/template.html';
 
 angular.module('netix', [
     uiRouter,
-    ngAnimate
+    ngAnimate,
+    appServices
 ])
     .config(($stateProvider, $urlRouterProvider, $httpProvider) => {
 
